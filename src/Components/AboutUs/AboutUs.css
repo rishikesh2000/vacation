@@ -1,0 +1,218 @@
+.aboutUsContainer {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1c1c1c;
+ background-color: #f1f1f1;
+}
+
+.aboutUsContainerAll .heroBanner {
+  position: relative;
+  height: 320px;
+  background: url('https://treehouseluxuryvacations.com/images/bg/bg8.jpg') center/cover no-repeat;
+}
+
+.aboutUsContainerAll .heroBanner .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+}
+
+.aboutUsContainerAll .heroBanner h1 {
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.aboutUsContainerAll .introSection {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 60px;
+  flex-wrap: wrap;
+}
+
+/* Full Text Flow With Auto Wrapping */
+.aboutUsContainerAll .textSection {
+  flex: 2;
+}
+
+.aboutUsContainerAll .textSection h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.aboutUsContainerAll .textSection p {
+  margin-bottom: 16px;
+  line-height: 1.7;
+    color: #666;
+
+}
+
+.aboutUsContainerAll .textSection .features {
+  font-weight: 600;
+    color: #666;
+  font-size: 14px;
+}
+
+/* Image Stack */
+.aboutUsContainerAll .imageSection {
+  min-width: 500px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.aboutUsContainerAll .imageSection img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.aboutUsContainerAll .imageSection .img1 {
+  margin-top: 40px;
+}
+.aboutUsContainerAll .restText {
+  color: #666;
+  border-bottom: 2px dashed #bdbaba88;
+}
+
+.aboutUsContainerAll .serviceGrid {
+width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 40px 0;
+  flex-wrap: wrap;
+}
+
+.aboutUsContainerAll .serviceCard {
+  width: 250px;
+  height: 250px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.aboutUsContainerAll .serviceCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.aboutUsContainerAll .serviceCard .icon {
+  color: #ff5e5e;
+  margin-bottom: 10px;
+}
+
+.aboutUsContainerAll .serviceCard p {
+  font-size: 25px;
+  font-weight: 600;
+  color: #1c1c1c;
+  margin: 0;
+  text-align: center;
+}
+
+
+.aboutUsContainerAll .experienceSection {
+  display: flex;
+  gap: 40px;
+  padding: 60px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+
+/* Left Main Image */
+.aboutUsContainerAll .leftImage {
+  flex: 1;
+  min-width: 300px;
+}
+
+.aboutUsContainerAll .leftImage img {
+  width: 100%;
+  height: 100vh;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Text Content */
+.aboutUsContainerAll .rightContent {
+  flex: 1.2;
+  min-width: 320px;
+}
+
+.aboutUsContainerAll .rightContent .tagline {
+  font-size: 20px;
+  color: #ff5e57;
+  margin-bottom: 8px;
+
+}
+
+.aboutUsContainerAll .rightContent .tagline span {
+  color: #ff5e57;
+  font-weight: bold;
+  
+}
+
+.aboutUsContainerAll .rightContent h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.aboutUsContainerAll .rightContent p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  color: #555;
+}
+
+/* Thumbnails */
+.aboutUsContainerAll .thumbnailRow {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.aboutUsContainerAll .thumbnailRow img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 750px) {
+  .aboutUsContainerAll .introSection{
+    padding: 10px;
+  }
+  .aboutUsContainerAll .imageSection{
+    flex-direction: column;
+  }
+  .aboutUsContainerAll .experienceSection{
+    padding: 20px 0;
+  }
+  .aboutUsContainerAll .thumbnailRow img{
+    width: 100%;
+    height: 400px;
+  }
+  .aboutUsContainerAll .rightContent{
+    padding: 10px;
+  }
+}
+

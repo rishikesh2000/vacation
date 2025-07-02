@@ -1,0 +1,157 @@
+.contactContainer {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1c1c1c;
+}
+
+.contactContainer .contactHero {
+  background: url("https://treehouseluxuryvacations.com/images/bg/bg1.jpg")
+    center/cover no-repeat;
+  height: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactContainer .contactHero .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contactContainer .contactHero h1 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* Main Contact Section */
+.contactContainer .contactContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px;
+  background-color: #f7f7f7;
+}
+
+/* Info (Left Column) */
+.contactContainer .infoSection {
+  flex: 1;
+  min-width: 300px;
+  color: #666;
+}
+
+.contactContainer .infoSection h3 {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contactContainer .infoSection p {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.contactContainer .infoCard {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 16px;
+}
+
+.contactContainer .infoCard .icon {
+  color: #ff5e57;
+  margin-right: 12px;
+  margin-top: 4px;
+}
+
+.contactContainer .infoCard .infoText {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Form (Right Column) */
+.contactContainer .formSection {
+  flex: 1;
+  min-width: 300px;
+  color: #666;
+}
+
+.contactContainer .formSection h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contactContainer .formSection p {
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.contactContainer .formSection form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contactContainer .inputGroup {
+  display: flex;
+  gap: 14px;
+}
+
+.contactContainer .inputGroup input {
+  flex: 1;
+}
+
+.contactContainer input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contactContainer textarea {
+  resize: vertical;
+}
+
+.contactContainer button {
+  align-self: flex-end;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contactContainer button:hover {
+  background-color: #005fa3;
+}
+
+
+  @media (max-width: 750px) {
+    .contactContainer .contactContent {
+      padding: 20px;
+    }
+
+    .contactContainer .inputGroup{
+      flex-direction: column;
+    }
+
+  }
+
+
