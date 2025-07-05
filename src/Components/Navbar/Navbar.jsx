@@ -47,7 +47,7 @@ const Navbar = () => {
           </div>
         </div>
         <Link to="/contact" onClick={closeMenu}>CONTACT US</Link>
-        <Link to="/#" className="loginBtn" onClick={closeMenu}>PAY NOW</Link>
+        <Link to="/pay" className="loginBtn" onClick={closeMenu}>PAY NOW</Link>
       </div>
     </div>
   );

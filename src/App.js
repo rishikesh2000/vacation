@@ -11,6 +11,7 @@ import TravelDesk from "./Components/Client/TravelDesk/TravelDesk";
 import Activities from "./Components/Client/Activities/Activities";
 import Destinations from "./Components/Destinations/Destinations";
 import HotesLocations from "./Components/Destinations/HotesLocations";
+import PayNow from "./Components/PayNow/PayNow";
 function App() {
   return (
     <Router>
@@ -25,11 +26,7 @@ function App() {
         <Route path="/activities" element={<Activities />} />
         <Route path="/destinations/:type" element={<Destinations />} />
         <Route path="/hotels" element={<HotesLocations />} />
-
-        
-
-
-        
+        <Route path="/pay" element={<PayNow />} />
       </Routes>
 
       <Footer />

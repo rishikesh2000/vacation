@@ -626,7 +626,7 @@ const Hero = () => {
             <div className="package-card" key={index}>
               <div className="image-container">
                 <img src={pkg.image} alt={pkg.title} />
-                <div className="image-gradient"></div> {/* gradient overlay */}
+                <div className="image-gradient"></div> 
               </div>
               <div className="package-content">
                 <div className="stars">
