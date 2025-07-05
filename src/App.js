@@ -1,5 +1,5 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 
 import Hero from "./Components/Home/Hero";
 import Navbar from "./Components/Navbar/Navbar";
@@ -12,11 +12,24 @@ import Activities from "./Components/Client/Activities/Activities";
 import Destinations from "./Components/Destinations/Destinations";
 import HotesLocations from "./Components/Destinations/HotesLocations";
 import PayNow from "./Components/PayNow/PayNow";
-function App() {
-  return (
-    <Router>
-      <Navbar />
+import Loader from "./Components/Loader/Loader";
 
+const AppContent = () => {
+  const location = useLocation();
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(true);
+    const timer = setTimeout(() => setLoading(false), 1500);
+
+    return () => clearTimeout(timer);
+  }, [location]);
+
+  if (loading) return <Loader />;
+
+  return (
+    <>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/about" element={<AboutUs />} />
@@ -28,8 +41,15 @@ function App() {
         <Route path="/hotels" element={<HotesLocations />} />
         <Route path="/pay" element={<PayNow />} />
       </Routes>
-
       <Footer />
+    </>
+  );
+};
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
     </Router>
   );
 }
