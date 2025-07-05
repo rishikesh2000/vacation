@@ -2,15 +2,12 @@ import React from "react";
 import "./PayNow.css";
 
 const PayNow = () => {
-    
+
   const handlePayNow = () => {
     const upiId = "7067272538@ptyes";
-    const name = "Sky High Luxury Vacations";
     const transactionNote = "Payment for Booking";
 
-    const upiUrl = `upi://pay?pa=${upiId}&pn=${encodeURIComponent(
-      name
-    )}&tn=${encodeURIComponent(transactionNote)}&cu=INR`;
+    const upiUrl = `upi://pay?pa=${upiId}&tn=${encodeURIComponent(transactionNote)}&cu=INR`;
 
     window.location.href = upiUrl;
   };
